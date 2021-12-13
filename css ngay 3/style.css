@@ -57,12 +57,12 @@ width: 200px;
         width: 25%;
     } 
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width:766px) {
     .row .col-4{
         width: 50%;   
     } 
 }
-@media screen and (max-width:479px) {
+@media screen and (max-width:478px) {
     .row .col-4{
         width: 100%;   
     } 
