@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+.attr {
+  color: aqua;
+}
+.attr::after {
+  content: attr(data-content);
+}
+.calc {
+  background-color: yellow;
+  width: calc(100% - 30px);
+}
+.linear-gradient {
+  background: linear-gradient(
+      217deg,
+      rgba(255, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+.row .col-4{
+    position: relative;
+    width: 25%;
+    float: left;
+    list-style: none;
+}
+.row .col-4 img{
+    width: 250px;
+}
+.sub-content{
+position: absolute;
+bottom: 50px;
+left: 0px;
+background: rgba(41, 37, 37, 0.6);
+color: #fff;
+font-size: 20px;
+width: 200px;
+}
+.content1:hover{
+    transform: scale(0.6);
+}
+.content2:hover{
+    transform: skew(15deg);
+}
+.content3:hover{
+    transform: rotate(45deg);
+}
+.content4:hover{
+    transform: translate(100px, 200px);
+}
+@media screen and (max-width:1023px) {
+    .row .col-4{
+        width: 25%;
+    } 
+}
+@media screen and (max-width:767px) {
+    .row .col-4{
+        width: 50%;   
+    } 
+}
+@media screen and (max-width:479px) {
+    .row .col-4{
+        width: 100%;   
+    } 
+}
+
